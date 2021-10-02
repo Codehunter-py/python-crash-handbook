@@ -10,12 +10,19 @@
     #else:
      #   print(message)
 
-prompt = "\nPlease enter a city you have visited: "
-while True:
-    city = input(prompt)
+#prompt = "\nPlease enter a city you have visited: "
+#hile True:
+    #city = input(prompt)
 
-    if city == 'quit':
-        break
-    else:
-        print(f"I would love to go to {city}")
-   
+    #if city == 'quit':
+        #break
+    #else:
+        #print(f"I would love to go to {city}")
+
+current = 0
+while current < 15:
+    current += 1
+    if current % 2 == 0:
+        continue
+
+    print(current) 
