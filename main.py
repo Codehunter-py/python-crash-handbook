@@ -78,18 +78,18 @@
  #   print(finished_sandwich)
 
 # 7-10 Dream Vacation
-prompt = """If you could visit one place in the world, where
-would you go? """
-responses = {}
-poll_active = True
+#prompt = """If you could visit one place in the world, where
+#would you go? """
+#responses = {}
+#poll_active = True
 
-while poll_active:
-    name = input("Enter your name: ")
-    place = input(prompt)
-    responses[name] = place
-    quit = input("Would you like to let another person respond? (yes/ no) ")
-    if quit == "no":
-        poll_active = False
+#while poll_active:
+ #   name = input("Enter your name: ")
+  #  place = input(prompt)
+   # responses[name] = place
+   # quit = input("Would you like to let another person respond? (yes/ no) ")
+   # if quit == "no":
+    #    poll_active = False
 
-for name, response in responses.items():
-    print(f"{name} wants to be in {response}.")
+#for name, response in responses.items():
+ #   print(f"{name} wants to be in {response}.")
