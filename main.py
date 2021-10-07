@@ -1,3 +1,8 @@
+########################################################
+# This is for practicing and memorizing of code blocks #
+#   Inspired by Python Crash Course Book 2nd Edition   #
+########################################################
+
 # prompt =("\nI am a bot!")
 # prompt += ("\nI will repeat what you ask: ")
 # message = ""
@@ -32,7 +37,7 @@
  #   print(x)
   #  x += 2
 
-# 7-4 page 123
+### 7-4 page 123
 #prompt = "\nPlease add toppings: "
 #prompt += """\nFor closing page please write 'quit'"""
 #toppings = ""
@@ -46,7 +51,7 @@
      #   print(f"{toppings} will be added to the pizza.")
 #print("Process are completed")
 
-# 7-5 movie tickets
+### 7-5 movie tickets
 #age = input("What is your age? ")
 #age = int(age)
 #active = True
@@ -61,7 +66,7 @@
     #    print("Ticket is 15$")
      #   active = False
 
-# 7-8 sandwich-orders
+### 7-8 sandwich-orders
 #sandwich_orders = ['pastrami', "Cheeseburger", 'pastrami', "Hotdog", 'pastrami', "Double Cheeseburger", "Spicy Wrap"]
 #finished_sandwiches = []
 
@@ -77,7 +82,7 @@
 #for finished_sandwich in finished_sandwiches:
  #   print(finished_sandwich)
 
-# 7-10 Dream Vacation
+### 7-10 Dream Vacation
 #prompt = """If you could visit one place in the world, where
 #would you go? """
 #responses = {}
@@ -93,3 +98,44 @@
 
 #for name, response in responses.items():
  #   print(f"{name} wants to be in {response}.")
+
+### 8-3 T-Shirt
+
+# def make_shirt(message, size='M'):
+ #   print(f"{size} is size of your T-shirt with message: {message}")
+
+#make_shirt('I love programming')
+
+#def describe_city(city, country='Poland'):
+ #   print(f"{city} is in {country}.")
+
+#describe_city('Lublin')
+#describe_city('Warsaw')
+#describe_city('Poznan')
+
+### 8-7 Album
+#def make_album(artist, title, number_songs=None):
+    
+ #   album = {'Artist name' : artist, 'Album tite' : title}
+  #  if number_songs:
+   #     album['Number of Songs'] = number_songs
+   # return album
+
+#while True:
+ #   print("\nPlease enter artist name")
+  #  print('Please enter title')
+#    print("(please enter number of songs) optional")
+ #   print("to quit enter 'q'")
+  #  artist = input("Artist: ")
+  #  if artist == 'q':
+   #     break
+  #  title = input('Enter title: ')
+   # if title == 'q':
+   #     break
+   # number = input('Enter number of songs: ')
+   # if number == 'q':
+    #    break
+
+#artist_album = make_album(artist,title,number)
+#print(f"hello this your album {artist_album}")
+
