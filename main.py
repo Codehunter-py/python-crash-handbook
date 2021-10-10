@@ -117,25 +117,68 @@
 #def make_album(artist, title, number_songs=None):
     
  #   album = {'Artist name' : artist, 'Album tite' : title}
-  #  if number_songs:
-   #     album['Number of Songs'] = number_songs
-   # return album
-
+ #   if number_songs:
+ #       album['Number of Songs'] = number_songs
+ #   return album
 #while True:
  #   print("\nPlease enter artist name")
   #  print('Please enter title')
-#    print("(please enter number of songs) optional")
- #   print("to quit enter 'q'")
-  #  artist = input("Artist: ")
-  #  if artist == 'q':
+   # print("(please enter number of songs) optional")
+   # print("to quit enter 'q'")
+   # artist = input("Artist: ")
+   # if artist == 'q':
    #     break
-  #  title = input('Enter title: ')
+    #title = input('Enter title: ')
    # if title == 'q':
-   #     break
-   # number = input('Enter number of songs: ')
+    #    break
+    #number = input('Enter number of songs: ')
    # if number == 'q':
     #    break
 
 #artist_album = make_album(artist,title,number)
-#print(f"hello this your album {artist_album}")
+# print(f"hello this your album {artist_album}")
+
+# 8-9, 8-11 messages
+
+#def show_messages(texts, sent_texts):
+ #   while texts:
+  #      current_text = texts.pop()
+  #      print(current_text)
+   #     sent_texts.append(current_text)
+
+#def show_result(sent_texts):
+ #   print("\nYour results: ")
+  #  for sent_text in sent_texts:
+   #     print(sent_text)
+
+#texts = ["Hi, Please call me late", "I am not available", "Call now"]
+#sent_texts = []
+
+#show_messages(texts[:], sent_texts) # preserve the list with [:]
+#show_result(sent_texts)
+#print(f"\n{texts}")
+
+#8-12 sandwiches
+#def sandwiches(*orders):
+ #   print("\nYour ordered selected sandwiches: ")
+  #  for order in orders:
+   #     print(order)
+
+#sandwiches('cheeseburger', 'double cheeseburger')
+#sandwiches("Pastrami")
+
+# 8-13 Build Profile
+
+#def user_profile(firstname, lastname, **user_info):
+ #   user_info['firstname'] = firstname 
+  #  user_info['lastname'] = lastname 
+   # return user_info
+
+# user = user_profile('John', 'Wick', location='LA')
+# print(user)
+
+###
+#import module 
+import pizza
+pizza.make_pizza(16, 'pepperoni')
 
