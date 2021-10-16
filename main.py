@@ -158,27 +158,115 @@
 #show_result(sent_texts)
 #print(f"\n{texts}")
 
-#8-12 sandwiches
-#def sandwiches(*orders):
- #   print("\nYour ordered selected sandwiches: ")
-  #  for order in orders:
-   #     print(order)
+# 8-12 sandwiches
+# def sandwiches(*orders):
+#    print("\nYour ordered selected sandwiches: ")
+#    for order in orders:
+#        print(order)
 
-#sandwiches('cheeseburger', 'double cheeseburger')
-#sandwiches("Pastrami")
+# sandwiches('cheeseburger', 'double cheeseburger')
+# sandwiches("Pastrami")
 
 # 8-13 Build Profile
 
-#def user_profile(firstname, lastname, **user_info):
- #   user_info['firstname'] = firstname 
-  #  user_info['lastname'] = lastname 
-   # return user_info
+# def user_profile(firstname, lastname, **user_info):
+#    user_info['firstname'] = firstname 
+#    user_info['lastname'] = lastname 
+#    return user_info
 
 # user = user_profile('John', 'Wick', location='LA')
 # print(user)
 
 ###
 #import module 
-import pizza
-pizza.make_pizza(16, 'pepperoni')
+#import pizza
+#pizza.make_pizza(16, 'pepperoni')
+
+# module_name.function_name()
+# module_name import fucntion_name()
+"""Here we give the function make_pizza() an alias, mp(), by importing
+make_pizza as mp. The as keyword renames a function using the alias you
+provide:"""
+"""from pizza import make_pizza as mp
+mp(16, 'pepperoni')
+mp(12, 'mushrooms', 'green peppers', 'extra cheese')"""
+
+# from modul_name import function_name as fn
+# from module_name import *
+
+### Chapter 9
+# Creating a class
+
+# class Dog:
+#     # a simple attempt to model a dog.
+
+#     def __init__(self, name, age):
+#         self.name = name
+#         self.age = age
+
+#     def sit(self):
+#         """Stimulate a dog sitting in response to a command"""
+#         print(f"{self.name} is now sitting.")
+
+#     def roll_over(self):
+#         print(f"{self.name} rolled over!") 
+
+#     def bark(self):
+#         print(f"{self.name} can bark to other people.")    
+
+# my_Dog = Dog('Max', 6)
+# print(f"My dog's name is {my_Dog.name}.")
+# print(f"My dog is {my_Dog.age} years old.")
+# my_Dog.sit()
+# my_Dog.roll_over()
+
+# other_dog = Dog('Lucy', 6)
+# print(f"\nIts name is {other_dog.name}")
+# print(f"She is {other_dog.age} years old.")
+# other_dog.sit()
+# other_dog.roll_over
+# other_dog.bark()
+
+# # 9-1 Restaurant
+
+# class Restaurant:
+
+#     def __init__(self, restaurant_name, cuisine_type):
+#         self.restaurant_name = restaurant_name
+#         self.cuisine_type = cuisine_type
+
+#     def describe_restaurant(self):
+#         print(f"{self.restaurant_name} has {self.cuisine_type} type of dishes in menu.")
+
+#     def open_restaurant(self):
+#         print(f"{self.restaurant_name} is open now")
+
+# my_restaurant = Restaurant("Kebab King", "Turkish") 
+"""instance representing this particular dog and 
+sets the name and age attributes using the values we provided."""
+# my_restaurant.describe_restaurant()
+# my_restaurant.open_restaurant()
+
+# # 9-2 Three Restaurants
+# print("\n")
+# telaviv = Restaurant("Tel-Avive", "Vegan")
+# telaviv.describe_restaurant()
+# telaviv.open_restaurant()
+
+# 9-3 Users
+
+class User:
+    def __init__(self, first_name, last_name):
+        self.first_name = first_name
+        self.last_name = last_name
+
+    def describe_user(self):
+        print(f"User's full name is {self.first_name} {self.last_name}")   
+
+    def greet_user(self):
+        print(f"{self.first_name} {self.last_name} welcome to our web-page!")     
+
+new_user1 = User('Jethro', 'Jenkins')
+new_user1.describe_user()
+new_user1.greet_user()
 
