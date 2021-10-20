@@ -270,3 +270,38 @@ sets the name and age attributes using the values we provided."""
 # new_user1.describe_user()
 # new_user1.greet_user()
 
+# 9-4 Number Served
+
+# class Restaurant:
+
+#     def __init__(self, restaurant_name, cuisine_type):
+#         self.restaurant_name = restaurant_name
+#         self.cuisine_type = cuisine_type
+#         self.number_served = 0
+
+#     def describe_restaurant(self):
+#         print(f"{self.restaurant_name} has {self.cuisine_type} type of dishes in menu.")
+
+#     def open_restaurant(self):
+#         print(f"{self.restaurant_name} is open now")
+
+#     def served(self):
+#         print(f"Restaurant has served {self.number_served} customer(s)") 
+
+#     def set_number_served(self, numbers):
+#         self.number_served = numbers
+#         print(f"You have served {self.number_served}")      
+
+#     def increment_number_served(self, add):
+#         self.number_served += add     
+#         print(my_restaurant.set_number_served())
+
+# my_restaurant = Restaurant("Kebab King", "Turkish") 
+
+# my_restaurant.number_served = 13
+# my_restaurant.served()
+# my_restaurant.set_number_served(6)
+# my_restaurant.increment_number_served(3)
+# my_restaurant.set_number_served(10)
+
+# 9-5 Login Attempt (on hold)
