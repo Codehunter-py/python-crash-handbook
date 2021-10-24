@@ -294,14 +294,67 @@ sets the name and age attributes using the values we provided."""
 
 #     def increment_number_served(self, add):
 #         self.number_served += add     
-#         print(my_restaurant.set_number_served())
+
+# class Bakhlava(Restaurant):
+    
+#     def __init__(self, restaurant_name, cuisine_type='Bakhlava'):
+#         super().__init__(restaurant_name, cuisine_type)
+#         self.type = []
+
+#     def show_type(self):
+#         print('n\We have following types:')
+#         for type in self.type:
+#             print( "- " + type.title())    
 
 # my_restaurant = Restaurant("Kebab King", "Turkish") 
-
-# my_restaurant.number_served = 13
-# my_restaurant.served()
-# my_restaurant.set_number_served(6)
-# my_restaurant.increment_number_served(3)
-# my_restaurant.set_number_served(10)
+# my_restaurant.describe_restaurant()
+# sweet = Bakhlava('Kebab King')
+# sweet.type = ["Fistikli", "Cevizli"]
+# sweet.show_type()
 
 # 9-5 Login Attempt (on hold)
+
+# class User():
+#     """Represent a simple user profile."""
+
+#     def __init__(self, first_name, last_name, username, email, location):
+#         """Initialize the user."""
+#         self.first_name = first_name.title()
+#         self.last_name = last_name.title()
+#         self.username = username
+#         self.email = email
+#         self.location = location.title()
+#         self.login_attempts = 0
+
+#     def describe_user(self):
+#         """Display a summary of the user's information."""
+#         print("\n" + self.first_name + " " + self.last_name)
+#         print("  Username: " + self.username)
+#         print("  Email: " + self.email)
+#         print("  Location: " + self.location)
+
+#     def greet_user(self):
+#         """Display a personalized greeting to the user."""
+#         print("\nWelcome back, " + self.username + "!")
+
+#     def increment_login_attempts(self):
+#         """Increment the value of login_attempts."""
+#         self.login_attempts += 1
+
+#     def reset_login_attempts(self):
+#         """Reset login_attempts to 0."""
+#         self.login_attempts = 0
+
+# eric = User('eric', 'matthes', 'e_matthes', 'e_matthes@example.com', 'alaska')
+# eric.describe_user()
+# eric.greet_user()
+
+# print("\nMaking 3 login attempts...")
+# eric.increment_login_attempts()
+# eric.increment_login_attempts()
+# eric.increment_login_attempts()
+# print("  Login attempts: " + str(eric.login_attempts))
+
+# print("Resetting login attempts...")
+# eric.reset_login_attempts()
+# print("  Login attempts: " + str(eric.login_attempts))
