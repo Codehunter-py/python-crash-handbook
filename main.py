@@ -358,3 +358,15 @@ sets the name and age attributes using the values we provided."""
 # print("Resetting login attempts...")
 # eric.reset_login_attempts()
 # print("  Login attempts: " + str(eric.login_attempts))
+
+# from electric_car import Car
+
+# my_old_car = Car('Skoda', 'Fabia', 2006)
+# print(my_old_car.get_descriptive_name())
+
+# from import_restaurant import Restaurant
+
+# my_new_restaurant = Restaurant("Absheron", "Azeri")
+# my_new_restaurant.describe_restaurant()
+# my_new_restaurant.open_restaurant()
+
