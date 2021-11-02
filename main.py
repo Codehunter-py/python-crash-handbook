@@ -370,3 +370,28 @@ sets the name and age attributes using the values we provided."""
 # my_new_restaurant.describe_restaurant()
 # my_new_restaurant.open_restaurant()
 
+""" Chapet X """
+
+import os
+os.chdir('c:/Users/Ibrahim/Desktop/python-crash-handbook')
+
+# with open('pi.txt') as file_object:
+#     for line in file_object:
+#         print(line)
+
+# with open('pi.txt') as file_object:
+#     lines=file_object.readlines()
+
+# pi_string=''
+# for line in lines:
+#     pi_string += line.rstrip()
+
+# print(pi_string)
+# print(len(pi_string))
+
+# birthday = input("Enter birthday, mmddyy: ")
+# if birthday in pi_string:
+#     print("Your birthday appears in the first million of pi!")
+# else:
+#     print("No match was found")
+
