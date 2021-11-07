@@ -10,13 +10,13 @@ active=True
 text=''
 while active:
     text=input("Your Note goes here: ")
-    with open(file, 'a') as file_object: #append and 'w' write
-        file_object.write(f"\n{text}")
+    if text != 'q':
+        with open(file, 'a') as file_object: #append and 'w' write
+            file_object.write(f"\n{text}")
+    else:
+        active = False
 
     if text == 's':
         with open(file) as f:
             contents = f.read()
-            print(contents)
-
-    if text == 'q':
-        active = False
+            print(contents)          
