@@ -133,29 +133,56 @@ import json
 
 ### 10-11 Favorite number
 
-def get_stored_number():
-    filename = 'fav_number.json'
-    try:
-        with open(filename) as f:
-            number = json.load(f)
-    except FileNotFoundError:
-        return None
-    else:
-        return number
+# def get_stored_number():
+#     filename = 'fav_number.json'
+#     try:
+#         with open(filename) as f:
+#             number = json.load(f)
+#     except FileNotFoundError:
+#         return None
+#     else:
+#         return number
 
-def store_fav_num():
-    number = input("What is your favorite number? ")
-    filename = 'fav_number.json'
-    with open(filename, 'w') as f:
-        json.dump(number, f)
-        return number
+# def store_fav_num():
+#     number = input("What is your favorite number? ")
+#     filename = 'fav_number.json'
+#     with open(filename, 'w') as f:
+#         json.dump(number, f)
+#         return number
 
-def ask_fav_num():
-    number = get_stored_number()
-    if number:
-        print(f"I know your favorite number! It is {number}")
-    else:
-        number = store_fav_num()
-        print("Your favorite number is stored")        
+# def ask_fav_num():
+#     number = get_stored_number()
+#     if number:
+#         print(f"I know your favorite number! It is {number}")
+#     else:
+#         number = store_fav_num()
+#         print("Your favorite number is stored")        
 
-ask_fav_num()
+# ask_fav_num()
+
+"""Chapter XI"""
+"""Testing code"""
+# from name_function import get_formatted_name
+# print("Enter 'q' at any time to quit.")
+# while True:
+#     first = input("\nPlease give me a first name: ")
+#     if first == 'q':
+#         break
+#     last = input("Please give me a last name: ")
+#     if last == 'q':
+#         break
+
+# formatted_name = get_formatted_name(first, last)
+# print(f"\tNeatly formatted name: {formatted_name}.")
+
+import unittest
+from name_function import get_formatted_name
+class NamesTestCase(unittest.TestCase):
+
+    def test_first_last_name(self):
+        """Are all names string?"""
+        formatted_name = get_formatted_name('ibrahim', 'musayev')
+        self.assertAlmostEqual(formatted_name, 'Ibrahim Musayev')
+
+if __name__ == 'main':
+    unittest.main()
