@@ -175,14 +175,27 @@ import json
 # formatted_name = get_formatted_name(first, last)
 # print(f"\tNeatly formatted name: {formatted_name}.")
 
-import unittest
-from name_function import get_formatted_name
-class NamesTestCase(unittest.TestCase):
+# import unittest
+# from name_function import get_formatted_name
+# class NamesTestCase(unittest.TestCase):
 
-    def test_first_last_name(self):
-        """Are all names string?"""
-        formatted_name = get_formatted_name('ibrahim', 'musayev')
-        self.assertAlmostEqual(formatted_name, 'Ibrahim Musayev')
+#     def test_first_last_name(self):
+#         """Are all names string?"""
+#         formatted_name = get_formatted_name('ibrahim', 'musayev')
+#         self.assertAlmostEqual(formatted_name, 'Ibrahim Musayev')
 
-if __name__ == 'main':
-    unittest.main()
+# if __name__ == 'main':
+#     unittest.main()
+
+"""Automate Outlook email"""
+#import win32com.client as client
+
+# outlook = client.Dispatch("Outlook.Application")
+# message = outlook.CreateItem(0)
+# message.Display()
+# message.To = ""
+# message.CC = ""
+# message.Subject = ""
+# message.Body = ""
+# message.Save()
+# message.Send()
