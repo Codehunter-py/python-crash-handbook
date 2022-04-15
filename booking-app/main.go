@@ -7,11 +7,12 @@ import (
 
 
 func main() {
-   conferenceName := "Go Conference"
-   const conferenceTickets int = 50
-   var remainingTickets uint = 50
+	conferenceName := "Go Conference" // in this type you cannot declare constants
+	const conferenceTickets int = 50 //constant cannot be changed and data type can be mentioned but not necessary
+	var remainingTickets uint = 50 //variable can be changed
    var bookings []string
-
+   
+   // print data types of variables
    fmt.Printf("conferenceTickets is %T, remainingTickets is %T, conferenceName is %T\n", conferenceName, conferenceTickets, remainingTickets)
    
    fmt.Printf("Welcome to %v booking application\n", conferenceName)
@@ -25,7 +26,7 @@ func main() {
       var userTickets uint 
       // ask for input 
       fmt.Println("Enter your first name: ")
-      fmt.Scan(&firstName)
+      fmt.Scan(&firstName) // scans user input and assigns it to the variable
    
       fmt.Println("Enter your surname: ")
       fmt.Scan(&lastName)   
