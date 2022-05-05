@@ -135,3 +135,13 @@ from unicodedata import name
 
 # print(newP._replace(y=6)) # output Point(x=3, y=6, z=5)
 
+"""CS50P - Lecture 7"""
+
+import re 
+
+email = input("Enter email: ").strip()
+
+if re.search("^\w+@(\w+\.)?\w+\.[a-zA-Z]{2,3}$", email, re.IGNORECASE):
+    print("Valid email")
+else:
+    print("Invalid email")
