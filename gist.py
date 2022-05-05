@@ -137,11 +137,26 @@ from unicodedata import name
 
 """CS50P - Lecture 7"""
 
-import re 
+# import re 
 
-email = input("Enter email: ").strip()
+# email = input("Enter email: ").strip()
 
-if re.search("^\w+@(\w+\.)?\w+\.[a-zA-Z]{2,3}$", email, re.IGNORECASE):
-    print("Valid email")
-else:
-    print("Invalid email")
+# if re.search("^\w+@(\w+\.)?\w+\.[a-zA-Z]{2,3}$", email, re.IGNORECASE):
+#     print("Valid email")
+# else:
+#     print("Invalid email")
+
+"""CS50P - Lecture 8"""
+
+import random 
+
+class Hat:
+    houses = ["Gryffindor", "Huffkepuf", "Ravenclaw", "Slytherin"]
+
+    @classmethod
+    def sort(cls,name):
+        for _ in range(5):
+            print(name, "is in", random.choice(cls.houses))
+
+# using name of class and accessing that class's objects
+Hat.sort("Harry")
