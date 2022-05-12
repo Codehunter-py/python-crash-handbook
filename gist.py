@@ -148,15 +148,63 @@ from unicodedata import name
 
 """CS50P - Lecture 8"""
 
-import random 
+# import random 
 
-class Hat:
-    houses = ["Gryffindor", "Huffkepuf", "Ravenclaw", "Slytherin"]
+# class Hat:
+#     houses = ["Gryffindor", "Huffkepuf", "Ravenclaw", "Slytherin"]
 
-    @classmethod
-    def sort(cls,name):
-        for _ in range(5):
-            print(name, "is in", random.choice(cls.houses))
+#     @classmethod
+#     def sort(cls,name):
+#         for _ in range(5):
+#             print(name, "is in", random.choice(cls.houses))
 
-# using name of class and accessing that class's objects
-Hat.sort("Harry")
+# # using name of class and accessing that class's objects
+# Hat.sort("Harry")
+
+"""CS50P - Lecture 9"""
+
+# balance = 0
+
+# def main():
+#     print("Balance:", balance)
+#     deposit(100)
+#     withdraw(50)
+#     print("Balance:", balance)
+
+
+# def deposit(amount):
+#     global balance
+#     balance += amount
+
+# def withdraw(amount):
+#     global balance
+#     balance -= amount
+
+# if __name__ == "__main__":
+#     main()
+
+
+class Account:
+    def __init__(self):
+        self._balance = 0
+
+    @property
+    def balace(self):
+        return self._balance
+
+    def deposit(self, amount):
+        self._balance += amount
+
+    def withdraw(self, amount):
+        self._balance -= amount
+
+def main():
+    account = Account()
+    print("Balance:", account.balace)
+    account.deposit(100)
+    account.withdraw(50)
+    print("Balance:", account.balace)
+
+if __name__ == "__main__":
+    main()
+
