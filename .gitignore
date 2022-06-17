@@ -3,3 +3,4 @@ __pycache__/*
 *.json
 beginner-projects
 cs50p
+.vscode
