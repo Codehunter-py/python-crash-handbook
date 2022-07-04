@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 # def replace_ending(sentence, old, new):
 #     # Check if the old string is at the end of the sentence
 #     if sentence.endswith(old):
@@ -161,7 +160,6 @@ class Hat:
 
 # using name of class and accessing that class's objects
 Hat.sort("Harry")
-=======
 # def replace_ending(sentence, old, new):
 #     # Check if the old string is at the end of the sentence
 #     if sentence.endswith(old):
@@ -348,28 +346,27 @@ from unicodedata import name
 #     main()
 
 
-class Account:
-    def __init__(self):
-        self._balance = 0
+# class Account:
+#     def __init__(self):
+#         self._balance = 0
 
-    @property
-    def balace(self):
-        return self._balance
+#     @property
+#     def balace(self):
+#         return self._balance
 
-    def deposit(self, amount):
-        self._balance += amount
+#     def deposit(self, amount):
+#         self._balance += amount
 
-    def withdraw(self, amount):
-        self._balance -= amount
+#     def withdraw(self, amount):
+#         self._balance -= amount
 
-def main():
-    account = Account()
-    print("Balance:", account.balace)
-    account.deposit(100)
-    account.withdraw(50)
-    print("Balance:", account.balace)
+# def main():
+#     account = Account()
+#     print("Balance:", account.balace)
+#     account.deposit(100)
+#     account.withdraw(50)
+#     print("Balance:", account.balace)
 
-if __name__ == "__main__":
-    main()
+# if __name__ == "__main__":
+#     main()
 
->>>>>>> 729bde190ba596ba4623489e841c4beeb2058208
