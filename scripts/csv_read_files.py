@@ -1,11 +1,11 @@
 import pandas as pd
 import os
 
-files = os.listdir('c:\\Users\\W116267\\Downloads')
+files = os.listdir('c:\\Users\\User\\Downloads')
 for file in files:
     print(file)
 
-os.chdir('c:\\Users\\W116267\\Downloads')
+os.chdir('c:\\Users\\User\\Downloads')
 filename = input("Enter csv filename: ")
 text=''
 
